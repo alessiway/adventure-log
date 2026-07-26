@@ -9,6 +9,38 @@
 
 <body>
 
+<div id="startScreen" class="start-screen">
+
+    <div class="love-window">
+
+        <div class="love-title">
+            💜 Adventure_Log.exe
+        </div>
+
+        <div class="love-content">
+
+            <h1>✨ Bienvenida, Nini ✨</h1>
+
+            <p>
+            Cargando recuerdos...
+            </p>
+
+            <p>
+            Usuario encontrado:
+            <br>
+            <b>NICOLE 💜</b>
+            </p>
+
+            <button onclick="enterAdventure()">
+                Iniciar aventura 🌸
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+    
 <div class="desktop">
 
     <div class="icons">
@@ -104,7 +136,11 @@ document.getElementById("text").innerHTML=text;
 document.getElementById("window").classList.remove("hidden");
 
 }
+function enterAdventure(){
 
+document.getElementById("startScreen").style.display="none";
+
+}
 </script>
 
 
