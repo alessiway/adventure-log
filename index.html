@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Adventure_Log</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Log 💜</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div id="stars"></div>
+<div class="xp-window">
 
-<div class="window">
+    <div class="title-bar">
+        💜 Adventure Log - Nini & Alessi
+    </div>
 
-<div class="titlebar">
-Adventure_Log
+    <div class="content">
+
+        <h1>Bienvenida, Nini ✨</h1>
+
+        <p>
+            Has encontrado un pequeño mundo creado con mucho amor.
+        </p>
+
+        <p>
+            Aquí comienza nuestra aventura...
+        </p>
+
+        <button onclick="startAdventure()">
+            Iniciar aventura 🗡️
+        </button>
+
+    </div>
+
 </div>
 
-<div class="content">
 
-<h1>♥ Adventure_Log ♥</h1>
+<script>
+function startAdventure(){
+    alert("La aventura comienza... 💜✨");
+}
+</script>
 
-<p>Version 1.0</p>
-
-<p>Una aventura te espera...</p>
-
-<button id="enter">
-▶ Abrir archivo
-</button>
-
-</div>
-
+</body>
+</html>
 </div>
 
 <script src="script.js"></script>
