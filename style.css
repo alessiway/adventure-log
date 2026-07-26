@@ -138,3 +138,102 @@ body {
     display:none;
 
 }
+/* PANTALLA DE INICIO Y2K */
+
+.start-screen {
+
+    position: fixed;
+    inset: 0;
+
+    background: linear-gradient(
+        135deg,
+        #ffb6e6,
+        #b58cff,
+        #ffd6f7
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10;
+
+}
+
+
+.love-window {
+
+    width: 320px;
+
+    background: #fff0ff;
+
+    border: 3px solid white;
+
+    border-radius: 12px;
+
+    box-shadow:
+    0 0 20px #ff69d9;
+
+}
+
+
+.love-title {
+
+    background: linear-gradient(
+        #ff8de5,
+        #c24cff
+    );
+
+    color:white;
+
+    padding:8px;
+
+    font-weight:bold;
+
+}
+
+
+.love-content {
+
+    padding:25px;
+
+    text-align:center;
+
+    color:#5b176d;
+
+}
+
+
+.love-content h1 {
+
+    font-size:24px;
+
+}
+
+
+.love-content button {
+
+    margin-top:15px;
+
+    padding:12px 20px;
+
+    background:#ff8de5;
+
+    color:white;
+
+    border:none;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+
+.love-content button:hover {
+
+    transform:scale(1.05);
+
+}
