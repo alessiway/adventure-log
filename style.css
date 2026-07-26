@@ -1,138 +1,86 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+body {
+    margin: 0;
+    height: 100vh;
+    background: #111;
+    font-family: "Trebuchet MS", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-body{
 
-    width:100vw;
-    height:100vh;
+.xp-window {
 
-    overflow:hidden;
+    width: 90%;
+    max-width: 500px;
 
-    background:linear-gradient(
-        180deg,
-        #ffd6ef 0%,
-        #f6c0ff 35%,
-        #b487ff 70%,
-        #33204b 100%
-    );
+    background: #dcd6ff;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    border: 3px solid #fff;
 
-}
+    border-radius: 8px;
 
-.window{
-
-    width:340px;
-    max-width:90%;
-
-    border-radius:14px;
-
-    background:rgba(255,255,255,.82);
-
-    backdrop-filter:blur(10px);
-
-    box-shadow:
-    0 0 35px rgba(255,255,255,.3);
-
-    overflow:hidden;
-
-    animation:appear .8s ease;
+    box-shadow: 0 0 20px #000;
 
 }
 
-.titlebar{
 
-    background:#ffb7df;
+.title-bar {
 
-    padding:12px;
+    background: linear-gradient(#6b5cff, #3b2bbd);
 
-    color:white;
+    color: white;
 
-    font-weight:bold;
+    padding: 8px;
 
-    text-align:center;
-
-    font-size:18px;
+    font-weight: bold;
 
 }
 
-.content{
 
-    padding:30px;
+.content {
 
-    text-align:center;
+    padding: 30px;
 
-}
+    text-align: center;
 
-.content h1{
-
-    color:#7d3cb5;
-
-    margin-bottom:10px;
+    color: #222;
 
 }
 
-.content p{
 
-    color:#555;
+h1 {
 
-    margin-bottom:18px;
-
-}
-
-button{
-
-    background:#b76dff;
-
-    color:white;
-
-    border:none;
-
-    padding:14px 24px;
-
-    border-radius:12px;
-
-    cursor:pointer;
-
-    font-size:17px;
-
-    transition:.25s;
+    color: #4b0082;
 
 }
 
-button:hover{
 
-    transform:scale(1.06);
+button {
 
-    background:#9f55ec;
+    margin-top: 20px;
 
-}
+    padding: 12px 25px;
 
-@keyframes appear{
+    border: 2px solid #4b0082;
 
-from{
+    background: #fff;
 
-opacity:0;
+    color: #4b0082;
 
-transform:translateY(20px);
+    font-weight: bold;
 
-}
+    cursor: pointer;
 
-to{
-
-opacity:1;
-
-transform:translateY(0px);
+    border-radius: 5px;
 
 }
 
-}
-body{
-    background:red !important;
+
+button:hover {
+
+    background: #4b0082;
+
+    color: white;
+
 }
