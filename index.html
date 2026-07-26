@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adventure Log 💜</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adventure Log 💜</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="xp-window">
+<div class="desktop">
 
-    <div class="title-bar">
-        💜 Adventure Log - Nini & Alessi
+    <div class="icons">
+
+        <div class="icon" ondblclick="openFolder('recuerdos')">
+            📁<br>
+            Recuerdos
+        </div>
+
+        <div class="icon" ondblclick="openFolder('fotos')">
+            🖼️<br>
+            Fotos
+        </div>
+
+        <div class="icon locked">
+            🔒<br>
+            Secretos
+        </div>
+
+        <div class="icon" ondblclick="openFolder('aventura')">
+            📖<br>
+            Adventure Log
+        </div>
+
     </div>
 
-    <div class="content">
 
-        <h1>Bienvenida, Nini ✨</h1>
+    <div class="taskbar">
+        🪟 Inicio
+    </div>
 
-        <p>
-            Has encontrado un pequeño mundo creado con mucho amor.
-        </p>
 
-        <p>
-            Aquí comienza nuestra aventura...
-        </p>
+    <div id="window" class="window hidden">
 
-        <button onclick="startAdventure()">
-            Iniciar aventura 🗡️
-        </button>
+        <div class="bar">
+            Adventure Log 💜
+        </div>
+
+        <div class="inside" id="text">
+            
+        </div>
 
     </div>
 
@@ -37,16 +57,30 @@
 
 
 <script>
-function startAdventure(){
-    alert("La aventura comienza... 💜✨");
+
+function openFolder(folder){
+
+let text="";
+
+if(folder=="recuerdos"){
+text="🌱 Aquí viven nuestros momentos más importantes...";
 }
+
+if(folder=="fotos"){
+text="📸 Nuestra galería de recuerdos estará aquí.";
+}
+
+if(folder=="aventura"){
+text="🗡️ Bienvenida a nuestra aventura, Nini. Este mundo fue creado para vos 💜";
+}
+
+document.getElementById("text").innerHTML=text;
+document.getElementById("window").classList.remove("hidden");
+
+}
+
 </script>
 
-</body>
-</html>
-</div>
-
-<script src="script.js"></script>
 
 </body>
 </html>
