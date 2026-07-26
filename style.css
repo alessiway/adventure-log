@@ -1,4 +1,7 @@
 body {
+    background: red !important;
+}
+body {
     margin: 0;
     overflow: hidden;
     font-family: Tahoma, Arial, sans-serif;
